@@ -1,7 +1,6 @@
 <?
 return [
-    '~^hello/(.*)$~' => [\Controllers\MainController::class, 'sayHello'],
-    '~^bye/(.*)$~' => [\Controllers\MainController::class, 'sayBye'],
+    '~^task/(\d+)$~' => [\Controllers\TasksController::class, 'view'],
     '~^$~' => [\Controllers\MainController::class, 'main'],
 ];
 ?>

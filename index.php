@@ -9,19 +9,6 @@
             });
 
 
-                //$author = new \Models\Users\User("Николай");
-                //$task = new \Models\Tasks\Task("Заголовок задачи", "Техническое задание задачи", $author);
-                //echo 'Задача от: ' . $task->getAuthor()->getName();
-                
-
-               /* $controller = new \Controllers\MainController();
-               
-                if (!empty($_GET['name'])) {
-                    $controller->sayHello($_GET['name']);
-                } else {
-                    $controller->main();
-                }*/
-
                 $route = $_GET['route'] ?? '';
                     $routes = require __DIR__ . '/src/routes.php';
 
